@@ -242,7 +242,7 @@ var ParticlePool = (function () {
       var dir = pos.clone().length(settings.particles.velocity);
       particles.add(
         canvas.width / 2 + pos.x,
-        canvas.height / 2 - pos.y,
+        canvas.height / 2 - pos.y + 100,
         dir.x,
         -dir.y
       );
