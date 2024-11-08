@@ -21,10 +21,6 @@ body {
   width: 100vw;
   height: 100vh;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; /* Pastikan canvas berada di bawah teks */
 }
 
 /* Posisi Teks Pesan di Atas Animasi */
@@ -37,10 +33,6 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 2em;
   animation: fadeIn 3s ease-in-out;
-  z-index: 2; /* Pastikan pesan berada di atas canvas */
-  background-color: rgba(255, 255, 255, 0.8); /* Tambahkan latar belakang semi-transparan */
-  padding: 10px;
-  border-radius: 8px;
 }
 
 .message h1 {
@@ -65,7 +57,6 @@ button#toggleMusic {
   color: white;
   border: none;
   border-radius: 5px;
-  z-index: 2; /* Pastikan tombol kontrol audio berada di atas canvas */
 }
 
 @keyframes fadeIn {
